@@ -5,10 +5,17 @@
     user.loggedIn = !user.loggedIn;
   }
 </script>
+
 <h1>If Else statement</h1>
 {#if user.loggedIn}
-  <button on:click={toggle}>Log out</button>
+  <button class="waves-effect waves-light btn-large btn red" on:click={toggle}>
+    <i class="material-icons  left">check</i>
+    Log out
+  </button>
 
 {:else}
-  <button on:click={toggle}>Log in</button>
+  <button class="waves-effect waves-light btn-large btn" on:click={toggle}>
+    <i class="material-icons  left">clear</i>
+    Log in
+  </button>
 {/if}

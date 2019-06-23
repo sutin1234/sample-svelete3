@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/bin/node /usr/bin/yarn add --dev @fortawesome/fontawesome-pro
+  /usr/bin/node /usr/bin/yarn add rollup-css-only -D
 
 PATH: 
   /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/usr/share/java:$JAVA_HOME/bin
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@fortawesome%2ffontawesome-pro: Not found
+  Error: https://registry.yarnpkg.com/rollup-css-only: Not found
       at Request.params.callback [as _callback] (/usr/lib/node_modules/yarn/lib/cli.js:65656:18)
       at Request.self.callback (/usr/lib/node_modules/yarn/lib/cli.js:134675:22)
       at Request.emit (events.js:198:13)
@@ -44,8 +44,11 @@ npm manifest:
     "dependencies": {
       "bulma": "^0.7.5",
       "eslint-import-resolver-node": "^0.3.2",
+      "materialize-css": "^1.0.0-rc.2",
       "sirv-cli": "^0.4.4",
-      "svelte-custom-elements": "^1.0.2"
+      "svelma": "^0.0.9",
+      "svelte-custom-elements": "^1.0.2",
+      "sveltestrap": "^1.0.0"
     },
     "scripts": {
       "build": "rollup -c",
@@ -868,6 +871,10 @@ Lockfile:
     dependencies:
       object-visit "^1.0.0"
   
+  materialize-css@^1.0.0-rc.2:
+    version "1.0.0-rc.2"
+    resolved "https://registry.yarnpkg.com/materialize-css/-/materialize-css-1.0.0-rc.2.tgz#b9e6b18f698c6ef77bb6b628d59147faf131eff5"
+  
   memorystream@^0.3.1:
     version "0.3.1"
     resolved "https://registry.yarnpkg.com/memorystream/-/memorystream-0.3.1.tgz#86d7090b30ce455d63fbae12dda51a47ddcaf9b2"
@@ -1562,13 +1569,27 @@ Lockfile:
     dependencies:
       has-flag "^3.0.0"
   
+  svelma@^0.0.9:
+    version "0.0.9"
+    resolved "https://registry.yarnpkg.com/svelma/-/svelma-0.0.9.tgz#aa2c89f4fb2fb389f07248d21fe6e65664af1b89"
+  
   svelte-custom-elements@^1.0.2:
     version "1.0.2"
     resolved "https://registry.yarnpkg.com/svelte-custom-elements/-/svelte-custom-elements-1.0.2.tgz#56ff04c98937c42faeb8596930904035a73340c2"
   
+  svelte@^1.60.3:
+    version "1.64.1"
+    resolved "https://registry.yarnpkg.com/svelte/-/svelte-1.64.1.tgz#03c97e204e0277c1430f429a6755ca425852e5de"
+  
   svelte@^3.0.0:
     version "3.5.3"
     resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.5.3.tgz#ca9c4a9401a8f00b16aa527009a6d9fe1aa21b0c"
+  
+  sveltestrap@^1.0.0:
+    version "1.0.0"
+    resolved "https://registry.yarnpkg.com/sveltestrap/-/sveltestrap-1.0.0.tgz#fb026e5e4816c2bbed3c7a1778cb835642975c49"
+    dependencies:
+      svelte "^1.60.3"
   
   tar@^4:
     version "4.4.10"

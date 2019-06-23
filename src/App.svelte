@@ -1,6 +1,10 @@
 <script>
   import { register } from "svelte-custom-elements"; // use custom elements
 
+  // themes materialize
+  import "../node_modules/materialize-css/dist/css/materialize.min.css";
+  import "../node_modules/materialize-css/dist/js/materialize.min.js";
+
   export let name; // name of prop main.js
   const pkg = {
     name: "svelte",
