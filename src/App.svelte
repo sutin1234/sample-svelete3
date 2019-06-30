@@ -28,6 +28,14 @@
   import IfElse from "./components/if-else.svelte";
   import Foreach from "./components/foreach.svelte";
   import AsyncAwait from "./components/async-await.svelte";
+  import DomEvent from './components/dom-event.svelte';
+  import EventDispacher from './components/parent-event-dispacher.svelte'
+  import ComponentEventForward from './components/component-event-forwarding.svelte'
+
+
+  function handleClick(){
+    alert('component Clicked');
+  }
 
   //register( 'hello-component', Hello, []); // register custom elements
 </script>
@@ -41,11 +49,16 @@
 	 } */
 </style>
 
-<h1>
+<h5>
   Hello with props from main.js
   <strong>{name}!</strong>
-</h1>
+</h5>
+<div>
+  <ComponentEventForward on:click={handleClick} />
+</div>
 
+<!--
+  
 <HelloWithProps data="sutin" />
 <DynamicAttribute />
 <NestComponent />
@@ -59,3 +72,8 @@
 <IfElse />
 <Foreach />
 <AsyncAwait />
+<DomEvent />
+<EventDispacher />
+-->
+
+

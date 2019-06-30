@@ -2,6 +2,15 @@
   color: blue;
   font-weight: bold;
 }
+.test-scss img {
+  width: 48px;
+  height: 48px;
+}
 .test-scss .my-sass {
-  border: 1px solid #000;
+  font-weight: bold;
+  font-size: 20px;
+}
+.box-position {
+  border: 1px solid red;
+  padding: 10px;
 }
