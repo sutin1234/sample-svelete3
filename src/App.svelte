@@ -4,6 +4,7 @@
   // themes materialize
   import "../node_modules/materialize-css/dist/css/materialize.min.css";
   import "../node_modules/materialize-css/dist/js/materialize.min.js";
+ import "./sass/main.scss";
 
   export let name; // name of prop main.js
   const pkg = {

@@ -6,6 +6,10 @@ import {
     terser
 } from 'rollup-plugin-terser';
 import css from 'rollup-plugin-css-only'
+import scss from 'rollup-plugin-scss'
+
+
+
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -25,17 +29,18 @@ export default {
             }
         }),
         css({
-            output: 'public/extra.css'
+            output: 'public/extra.css',
+            insert: true
         }),
         resolve({
             browser: true
         }),
-
         commonjs(), !production && livereload('public'),
 
-        production && terser()
+        production && terser(),
+        scss()
     ],
     watch: {
-        clearScreen: false
+        clearScreen: true
     }
 };
