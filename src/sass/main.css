@@ -14,3 +14,11 @@
   border: 1px solid red;
   padding: 10px;
 }
+[contenteditable] {
+  padding: 0.5em;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+.card {
+  height: 300px;
+}

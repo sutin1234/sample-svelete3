@@ -1,7 +1,14 @@
 .test-scss {
-  color: blue;
-  font-weight: bold;
+    color: blue;
+    font-weight: bold;
 }
+
 .test-scss .my-sass {
-  border: 1px solid #000;
+    border: 1px solid #000;
+}
+
+input {
+    display: block;
+    width: 500px;
+    max-width: 100%;
 }

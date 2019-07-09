@@ -31,6 +31,9 @@
   import DomEvent from './components/dom-event.svelte';
   import EventDispacher from './components/parent-event-dispacher.svelte'
   import ComponentEventForward from './components/component-event-forwarding.svelte'
+  import TextInput from './components/input/text-input.svelte'
+  import EventMount from './components/lifecycle/on-mount.svelte';
+  import BeforeUpdate from './components/lifecycle/before-update.svelte'
 
 
   function handleClick(){
@@ -53,9 +56,9 @@
   Hello with props from main.js
   <strong>{name}!</strong>
 </h5>
-<div>
+<!-- <div>
   <ComponentEventForward on:click={handleClick} />
-</div>
+</div> -->
 
 <!--
   
@@ -74,6 +77,9 @@
 <AsyncAwait />
 <DomEvent />
 <EventDispacher />
+<TextInput />
+<EventMount />
 -->
 
+<BeforeUpdate />
 
