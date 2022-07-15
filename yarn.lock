@@ -2249,9 +2249,9 @@ svelte@^1.60.3:
   version "1.64.1"
   resolved "https://registry.yarnpkg.com/svelte/-/svelte-1.64.1.tgz#03c97e204e0277c1430f429a6755ca425852e5de"
 
-svelte@^3.0.0:
-  version "3.5.3"
-  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.5.3.tgz#ca9c4a9401a8f00b16aa527009a6d9fe1aa21b0c"
+svelte@^3.49.0:
+  version "3.49.0"
+  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.49.0.tgz#5baee3c672306de1070c3b7888fc2204e36a4029"
 
 sveltestrap@^1.0.0:
   version "1.0.0"
